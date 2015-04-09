@@ -25,7 +25,7 @@ It's best if you consult the source and tests, as classes are small and few.
 import { Disposable, CompositeDisposable, SerialDisposable } from 'disposables';
 
 // or you can import just the ones you need to keep it even tinier
-// import SerialDisposable from 'disposables/SerialDisposable';
+// import SerialDisposable from 'disposables/modules/SerialDisposable';
 
 function attachHandlers(node) {
 	let someHandler = ...;

@@ -2,7 +2,7 @@
   "name": "disposables",
   "version": "1.0.0",
   "description": "Disposables let you safely compose resource disposal semantics",
-  "main": "dist-modules/index.js",
+  "main": "modules/index.js",
   "scripts": {
     "build": "./scripts/build",
     "test": "./scripts/test",
@@ -17,6 +17,12 @@
     "name": "Cloud Programmability Team",
     "url": "https://github.com/Reactive-Extensions/RxJS/blob/master/authors.txt"
   },
+  "contributors": [
+    {
+      "name": "Dan Abramov",
+      "email": "dan.abramov@me.com"
+    }
+  ],
   "licenses": [
     {
       "type": "Apache License, Version 2.0",
