@@ -1,7 +1,10 @@
 # disposables [![npm package](https://img.shields.io/npm/v/disposables.svg?style=flat-square)](https://www.npmjs.org/package/disposables)
 
-Disposables let you safely compose resource disposal semantics.
+Disposables let you safely compose resource disposal semantics.  
 Think DOM nodes, event handlers, socket connections.
+
+**This implementation of disposables is extracted from [RxJS](https://github.com/Reactive-Extensions/RxJS/blob/master/src/core/disposables).**  
+I took the liberty to tweak the code style to my liking and provide this as a standalone package.
 
 This tiny package includes several disposables:
 
@@ -9,13 +12,10 @@ This tiny package includes several disposables:
 * [`CompositeDisposable`](https://github.com/gaearon/disposables/blob/master/modules/CompositeDisposable.js) ensures a group of disposables are disposed together;
 * [`SerialDisposable`](https://github.com/gaearon/disposables/blob/master/modules/SerialDisposable.js) switches underlying disposables on the fly and disposes them.
 
-This implementation of disposables is extracted from [RxJS](https://github.com/Reactive-Extensions/RxJS/blob/master/src/core/disposables).
-I took the liberty to tweak the code style to my liking and provide this as a standalone package.
+The API is *mostly* the same as RxJS except stricter in a few places.  
+It does not strive for 100% API compatibility with RxJS, but generally the disposable behavior is the same.
 
-The API is *mostly* the same as RxJS except stricter in a few places.
-It does not strive for 100% API compatibility with RxJS, but general disposable behavior should match.
-
-It's best if you consult the source and tests, as classes are small and few.
+It's best if you consult the [source](https://github.com/gaearon/disposables/tree/master/src/) and [tests](https://github.com/gaearon/disposables/tree/master/src/__tests__), as classes are small and few.
 
 ### Usage
 
