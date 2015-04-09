@@ -1,6 +1,6 @@
 {
   "name": "disposables",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Disposables let you safely compose resource disposal semantics",
   "main": "modules/index.js",
   "scripts": {
