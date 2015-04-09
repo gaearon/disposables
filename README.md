@@ -17,6 +17,53 @@ It does not strive for 100% API compatibility with RxJS, but general disposable 
 
 It's best if you consult the source and tests, as classes are small and few.
 
+### Usage
+
+#### Importing
+
+```js
+import { Disposable, CompositeDisposable, SerialDisposable } from 'disposables';
+
+// or you can import just the ones you need to keep it even tinier
+// import SerialDisposable from 'disposables/SerialDisposable';
+
+function attachHandlers(node) {
+	let someHandler = ...;
+	node.addEventHandler(someHandler);
+
+	// use Disposable to guarantee single execution
+	return new Disposable(() => {
+	  node.removeEventHandler(someHandler);
+	});
+}
+
+// CompositeDisposable lets you compose several disposables...
+let nodes = ...;
+let compositeDisp = new CompositeDisposable(nodes.map(attachHandlers));
+
+// and more later...
+let moreNodes = ...
+moreNodes.map(attachHandlers).forEach(d => compositeDisp.add(d));
+
+// and dispose them at once!
+function goodbye() {
+	compositeDisp.dispose();
+}
+
+// ... or replace with a bunch of new ones ...
+let serialDisp = new SerialDisposable();
+serialDisp.setDisposable(compositeDisp);
+
+function replaceNodes(newNodes) {
+	let nextCompositeDisp = newNodes.map(attachHandlers);
+
+	// release all the previous disposables:
+	serialDisp.setDisposable(nextCompositeDisp);
+}
+
+// with a guarantee of each dispose() called only once.
+```
+
 ### Why Use This Over RxJS
 
 * You only need disposables and not observables;
