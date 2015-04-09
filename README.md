@@ -13,7 +13,7 @@ This tiny package includes several disposables:
 * [`SerialDisposable`](https://github.com/gaearon/disposables/blob/master/modules/SerialDisposable.js) switches underlying disposables on the fly and disposes them.
 
 The API is *mostly* the same as RxJS except stricter in a few places.  
-It does not strive for 100% API compatibility with RxJS, but generally the disposable behavior is the same.
+It does not strive for 100% API compatibility with RxJS, but generally behavior is the same.
 
 It's best if you consult the [source](https://github.com/gaearon/disposables/tree/master/src/) and [tests](https://github.com/gaearon/disposables/tree/master/src/__tests__), as classes are small and few.
 
