@@ -53,7 +53,7 @@ let serialDisp = new SerialDisposable();
 serialDisp.setDisposable(compositeDisp);
 
 function replaceNodes(newNodes) {
-	let nextCompositeDisp = newNodes.map(attachHandlers);
+	let nextCompositeDisp = new CompositeDisposable(newNodes.map(attachHandlers));
 
 	// release all the previous disposables:
 	serialDisp.setDisposable(nextCompositeDisp);
