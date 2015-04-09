@@ -5,9 +5,9 @@ Think DOM nodes, event handlers, socket connections.
 
 This tiny package includes several disposables:
 
-* `Disposable` ensures its `dispose` action runs only once;
-* `CompositeDisposable` ensures a group of disposables is disposed together;
-* `SerialDisposable` switches underlying disposables on the fly.
+* [`Disposable`](https://github.com/gaearon/disposables/blob/master/modules/Disposable.js) ensures its `dispose` action runs only once;
+* [`CompositeDisposable`](https://github.com/gaearon/disposables/blob/master/modules/CompositeDisposable.js) ensures a group of disposables are disposed together;
+* [`SerialDisposable`](https://github.com/gaearon/disposables/blob/master/modules/SerialDisposable.js) switches underlying disposables on the fly and disposes them.
 
 This implementation of disposables is extracted from [RxJS](https://github.com/Reactive-Extensions/RxJS/blob/master/src/core/disposables).
 I took the liberty to tweak the code style to my liking and provide this as a standalone package.
