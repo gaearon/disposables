@@ -1,4 +1,4 @@
-# disposables
+# disposables [![npm package](https://img.shields.io/npm/v/disposables.svg?style=flat-square)](https://www.npmjs.org/package/disposables)
 
 Disposables let you safely compose resource disposal semantics.
 Think DOM nodes, event handlers, socket connections.
@@ -18,8 +18,6 @@ It does not strive for 100% API compatibility with RxJS, but general disposable 
 It's best if you consult the source and tests, as classes are small and few.
 
 ### Usage
-
-#### Importing
 
 ```js
 import { Disposable, CompositeDisposable, SerialDisposable } from 'disposables';
