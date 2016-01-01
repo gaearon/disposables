@@ -8,9 +8,9 @@ I took the liberty to tweak the code style to my liking and provide this as a st
 
 This tiny package includes several disposables:
 
-* [`Disposable`](https://github.com/gaearon/disposables/blob/master/modules/Disposable.js) ensures its `dispose` action runs only once;
-* [`CompositeDisposable`](https://github.com/gaearon/disposables/blob/master/modules/CompositeDisposable.js) ensures a group of disposables are disposed together;
-* [`SerialDisposable`](https://github.com/gaearon/disposables/blob/master/modules/SerialDisposable.js) switches underlying disposables on the fly and disposes them.
+* [`Disposable`](https://github.com/gaearon/disposables/blob/master/src/Disposable.js) ensures its `dispose` action runs only once;
+* [`CompositeDisposable`](https://github.com/gaearon/disposables/blob/master/src/CompositeDisposable.js) ensures a group of disposables are disposed together;
+* [`SerialDisposable`](https://github.com/gaearon/disposables/blob/master/src/SerialDisposable.js) switches underlying disposables on the fly and disposes them.
 
 The API is *mostly* the same as RxJS except stricter in a few places.  
 It does not strive for 100% API compatibility with RxJS, but generally behavior is the same.
