@@ -71,4 +71,4 @@ Really, there are no other reasons.
 
 ### License
 
-Like the original RxJS code, it is licened under Apache 2.0.
+Like the original RxJS code, it is licensed under Apache 2.0.
