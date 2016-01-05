@@ -1,3 +1,8 @@
+# NOT ACTIVELY MAINTAINED
+
+>**This project works fine but is not actively maintained.**  
+>**For the new code, you might want to try the new official [rx.disposables](https://github.com/Reactive-Extensions/rx.disposables) package instead.**
+
 # disposables [![npm package](https://img.shields.io/npm/v/disposables.svg?style=flat-square)](https://www.npmjs.org/package/disposables)
 
 Disposables let you safely compose resource disposal semantics.  
@@ -61,13 +66,6 @@ function replaceNodes(newNodes) {
 
 // with a guarantee of each dispose() called only once.
 ```
-
-### Why Use This Over RxJS
-
-* You only need disposables and not observables;
-* RxJS is still figuring out [its modularity story](https://github.com/Reactive-Extensions/RxJS-Modular) and [it's not ready](https://github.com/Reactive-Extensions/RxJS-Modular/issues/4#issuecomment-90879664).
-
-Really, there are no other reasons.
 
 ### License
 
