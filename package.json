@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "Disposables let you safely compose resource disposal semantics",
   "main": "modules/index.js",
+  "files": [
+    "modules"
+  ],
   "scripts": {
     "build": "./scripts/build",
     "test": "./scripts/test",
